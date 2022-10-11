@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -58,8 +60,6 @@ namespace PAgenda_EntityFramework_CF
                     Console.WriteLine("Nome: ");
                     person.name = Console.ReadLine();
 
-                    //Verificar se ja existe esse nome
-
                     Console.WriteLine("Telefone: ");
                     telephone.phone = Console.ReadLine();
 
@@ -75,7 +75,24 @@ namespace PAgenda_EntityFramework_CF
 
             void Editar()
             {
+                using (var context = new PhoneBook())
+                {
+                    Console.WriteLine("Digite o nome para mudar o telefone: ");
+                    person.name = Console.ReadLine();
 
+                    Telephone find = context.Telephones.FirstOrDefault(t => t.name.name == person.name);
+
+                    Console.WriteLine("Telefone: ");
+                    find.phone = Console.ReadLine();
+
+                    Console.WriteLine("Celular: ");
+                    find.mobile = Console.ReadLine();
+
+                    context.Entry(find).State = EntityState.Modified;
+                    context.Telephones.AddOrUpdate(find);
+
+                    context.SaveChanges();
+                }
             }
 
             void Visualizar()
