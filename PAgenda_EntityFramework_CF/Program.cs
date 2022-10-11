@@ -97,7 +97,17 @@ namespace PAgenda_EntityFramework_CF
 
             void Visualizar()
             {
+                using (var context = new PhoneBook())
+                {
+                    Console.WriteLine("Digite o nome para pesquisar o telefone: ");
+                    person.name = Console.ReadLine();
 
+                    var find = context.Telephones.FirstOrDefault(t => t.name.name == person.name);
+
+                    Console.WriteLine("Id: {0}", find.Id);
+                    Console.WriteLine("Phone: {0}", find.phone);
+                    Console.WriteLine("Mobile: {0}", find.mobile);
+                }
             }
 
             void Remover()
