@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAgenda_EntityFramework_CF", "PAgenda_EntityFramework_CF\PAgenda_EntityFramework_CF.csproj", "{09614985-8DAF-4688-AD23-9BCF12A65293}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09614985-8DAF-4688-AD23-9BCF12A65293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09614985-8DAF-4688-AD23-9BCF12A65293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09614985-8DAF-4688-AD23-9BCF12A65293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09614985-8DAF-4688-AD23-9BCF12A65293}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E936C7A-75FF-4B98-9292-1F45F9B3B932}
+	EndGlobalSection
+EndGlobal
