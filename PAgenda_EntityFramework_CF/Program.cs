@@ -112,7 +112,21 @@ namespace PAgenda_EntityFramework_CF
 
             void Remover()
             {
+                using (var context = new PhoneBook())
+                {
+                    Console.WriteLine("Digite o nome para remover o telefone: ");
+                    person.name = Console.ReadLine();
 
+                    Person findPerson = context.Person.FirstOrDefault(p => p.name == person.name);
+                    Telephone findTelephone = context.Telephones.FirstOrDefault(t => t.name.name == person.name);
+
+                    context.Entry(findTelephone).State = EntityState.Deleted;
+                    context.Telephones.Remove(findTelephone);
+
+                    context.Entry(findPerson).State = EntityState.Deleted;
+                    context.Person.Remove(findPerson);
+                    context.SaveChanges();
+                }
             }
         }
     }
