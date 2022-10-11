@@ -54,9 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\PhoneBook.cs" />
-    <Compile Include="Migrations\202210110101284_InitialCreate.cs" />
-    <Compile Include="Migrations\202210110101284_InitialCreate.designer.cs">
-      <DependentUpon>202210110101284_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202210110146035_InitialCreate.cs" />
+    <Compile Include="Migrations\202210110146035_InitialCreate.designer.cs">
+      <DependentUpon>202210110146035_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Person.cs" />
@@ -69,8 +69,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202210110101284_InitialCreate.resx">
-      <DependentUpon>202210110101284_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202210110146035_InitialCreate.resx">
+      <DependentUpon>202210110146035_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

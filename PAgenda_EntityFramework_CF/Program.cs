@@ -65,7 +65,7 @@ namespace PAgenda_EntityFramework_CF
 
                     Console.WriteLine("Celular: ");
                     telephone.mobile = Console.ReadLine();
-
+                    telephone.name = person;
 
                     context.Person.Add(person);
                     context.Telephones.Add(telephone);

@@ -13,7 +13,7 @@ namespace PAgenda_EntityFramework_CF.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202210110101284_InitialCreate"; }
+            get { return "202210110146035_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source
